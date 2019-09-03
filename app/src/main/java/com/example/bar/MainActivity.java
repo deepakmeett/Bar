@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.bar, menu);
@@ -54,8 +53,10 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.search:
-                Intent intent = new Intent(MainActivity.this, Main2Activity.class);
-                startActivity(intent);
+                    Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+                    startActivity(intent);
+                    finish();
+
                 return true;
             case R.id.share:
                 Intent intent1 = new Intent(Intent.ACTION_SEND);
@@ -71,5 +72,6 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
-
+    
 }
+
