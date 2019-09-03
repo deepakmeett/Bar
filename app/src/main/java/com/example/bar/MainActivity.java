@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent();
+                
                 Snackbar.make(view, "Fab is clicked", Snackbar.LENGTH_SHORT)
                         .setAction("UNDO", null).show();
             }

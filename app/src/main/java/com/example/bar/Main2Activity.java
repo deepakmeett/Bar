@@ -58,7 +58,6 @@ public class Main2Activity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),"Clicked on Delete", Toast.LENGTH_SHORT).show();
                 default:
                     return super.onOptionsItemSelected(item);
-
         }
     }
 
