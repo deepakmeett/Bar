@@ -31,8 +31,7 @@ public class Main2Activity extends AppCompatActivity {
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Main2Activity.this, MainActivity.class);
-                startActivity(intent);
+                onBackPressed();
                 finish();
             }
         });
